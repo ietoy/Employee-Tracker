@@ -229,7 +229,6 @@ function viewRoles() {
 function viewEmployees() {
     var query = "SELECT employees.id, employees.first_name, employees.last_name, employees.role_id ";
     query += "FROM employees LEFT JOIN roles ON (employees.role_id = roles.id)";
-    // query += "SELECT * FROM departments";
     connection.query(query, function(err, res) {
 
 
@@ -240,7 +239,5 @@ function viewEmployees() {
     })
 };
 
-function changeEmployeeInfo() {
-
-};
+// function changeEmployeeInfo() {};
 
